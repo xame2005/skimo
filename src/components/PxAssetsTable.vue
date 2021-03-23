@@ -1,32 +1,39 @@
 <template>
-  <table>
-    <thead>
-      <tr class="bg-gray-100 border-b-2 border-gray-400">
-        <th></th>
-        <th>
-          <span>Nombre</span>
-        </th>
-        <th>Foto</th>
-        <th>ID</th>
-        <td class="hidden sm:block"></td>
-      </tr>
-    </thead>
-    <tbody>
-      <tr
-        v-for="a in assets"
-        :key="a.id"
-        class="border-b border-gray-200 hover:bg-gray-100 hover:bg-orange-100"
-      >
-        <td></td>
-        <td></td>
-        <td></td>
-        <td></td>
-        <td></td>
-        <td></td>
-        <td class="hidden sm:block"></td>
-      </tr>
-    </tbody>
-  </table>
+  <div>
+    <h2 class="text-center grid-rows-4 text-green-900 text-lg font-bold">
+      Clientes Frecuentes
+    </h2>
+    <table>
+      <thead>
+        <tr class="bg-gray-100 border-b-2 border-gray-400">
+          <th>
+            <span>Nombre</span>
+          </th>
+          <th>Foto</th>
+          <th>ID</th>
+          <td class="hidden sm:block"></td>
+        </tr>
+      </thead>
+      <tbody>
+        <tr
+          v-for="a in assets"
+          :key="a.id"
+          class="border-b border-gray-200 hover:bg-gray-100 hover:bg-orange-100"
+        >
+          <td class="text-green-900 text-bold">{{ a.name }}</td>
+          <td>
+            <img
+              class="rounded-full border-2 border-white"
+              :src="a.image_url"
+              :alt="a.name"
+            />
+          </td>
+          <td>{{ a.id }}</td>
+          <td class="hidden sm:block"></td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
 </template>
 
 <script>

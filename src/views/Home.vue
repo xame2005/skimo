@@ -1,17 +1,19 @@
 <template>
-  <div>
+  <div class="grid grid-cols-2 grid-flow-col gap-4">
     <px-assets-table :assets="assets" />
+    <sk-aside />
   </div>
 </template>
 
 <script>
 import api from "@/api";
 import PxAssetsTable from "@/components/PxAssetsTable.vue";
+import SkAside from "@/components/SkAside.vue";
 
 export default {
   name: "Home",
 
-  components: { PxAssetsTable },
+  components: { PxAssetsTable, SkAside },
 
   data() {
     return {
