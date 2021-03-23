@@ -1,19 +1,17 @@
 <template>
   <main>
-    <sk-header></sk-header>
-    <px-assets-table />
+    <sk-header />
+    <router-view class="container px-5 sm:px-20 py-20 flex justify-center" />
   </main>
 </template>
 
 <script>
 import SkHeader from "@/components/SkHeader.vue";
-import PxAssetsTable from "@/components/PxAssetsTable.vue";
 
 export default {
   name: "App",
   components: {
     SkHeader,
-    PxAssetsTable,
   },
 };
 </script>
