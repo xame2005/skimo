@@ -2,16 +2,19 @@
   <main>
     <sk-header />
     <router-view class="container px-5 sm:px-20 py-20 flex justify-center" />
+    <sk-footer />
   </main>
 </template>
 
 <script>
 import SkHeader from "@/components/SkHeader.vue";
+import SkFooter from "@/components/SkFooter.vue";
 
 export default {
   name: "App",
   components: {
     SkHeader,
+    SkFooter,
   },
 };
 </script>

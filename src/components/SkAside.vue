@@ -8,10 +8,7 @@
       Accusamus non praesentium odit dolores voluptatibus minima perferendis
       dignissimos enim. Voluptatum enim, quia mollitia voluptate omnis,
       blanditiis delectus ut eum quibusdam repellendus corporis cum nihil
-      voluptatibus accusantium consequatur recusandae. Architecto. Nostrum atque
-      quis suscipit exercitationem similique vero, vel voluptatem porro non
-      voluptate id beatae illo quaerat! Nemo quaerat vel aperiam tempore?
-      Accusamus ipsa perspiciatis velit asperiores aliquam rem magnam harum.
+      voluptatibus accusantium consequatur recusandae. Architecto.
     </p>
   </aside>
 </template>
