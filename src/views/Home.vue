@@ -1,7 +1,11 @@
 <template>
-  <div class="grid grid-cols-2 grid-flow-col gap-4">
-    <px-assets-table :assets="assets" />
-    <sk-aside />
+  <div class="grid grid-cols-4 grid-flow-col gap-4">
+    <div class="grid col-span-3">
+      <px-assets-table :assets="assets" />
+    </div>
+    <div>
+      <sk-aside />
+    </div>
   </div>
 </template>
 
